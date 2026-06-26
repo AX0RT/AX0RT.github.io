@@ -1,4 +1,4 @@
-## Hi there 👋
+## Hi there !
 
 <!--
 **AX0RT/Ax0rt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

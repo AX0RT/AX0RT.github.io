@@ -1,5 +1,5 @@
 /* ============================================
-   DARK THEME PORTFOLIO - COMPLETE STYLESHEET
+   PORTFOLIO CSS
    ============================================ */
 
 /* RESET & BASE */
@@ -37,7 +37,7 @@ h2 {
     font-weight: 600;
     letter-spacing: -0.01em;
     margin-bottom: 1.5rem;
-    margin-top: 4rem;
+    margin-top: 0rem;
     color: #fafafa;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #27272a;
@@ -106,7 +106,8 @@ section {
 }
 
 .about {
-    padding: 4rem 0;
+    padding: 1rem 0;
+    text-align: justify;
 }
 
 /* PROJECTS */
@@ -117,6 +118,10 @@ section {
     border: 1px solid #1f1f1f;
     border-radius: 8px;
     transition: border-color 0.3s ease;
+}
+
+.project p:not(.tagline) {
+    text-align: justify;
 }
 
 .project:hover {
@@ -159,6 +164,7 @@ section {
 .highlights {
     list-style: none;
     padding-left: 0;
+    text-align: justify;
 }
 
 .highlights li {

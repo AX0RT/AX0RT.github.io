@@ -1,0 +1,248 @@
+/* ============================================
+   PORTFOLIO CSS
+   ============================================ */
+
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #0a0a0a;
+    color: #e4e4e7;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+    color: #fafafa;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.5rem;
+    margin-top: 0rem;
+    color: #fafafa;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #27272a;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #a1a1aa;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #d4d4d8;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #a1a1aa;
+    margin-bottom: 1.5rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #71717a;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+/* LINKS */
+a {
+    color: #60a5fa;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+/* HEADER */
+header {
+    padding: 6rem 0 4rem;
+    text-align: center;
+    border-bottom: 1px solid #27272a;
+}
+
+.contact {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.separator {
+    margin: 0 0.75rem;
+    color: #52525b;
+}
+
+/* SECTIONS */
+section {
+    padding: 2rem 0;
+}
+
+.about {
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+/* PROJECTS */
+.project {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background-color: #111111;
+    border: 1px solid #1f1f1f;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.project p:not(.tagline) {
+    text-align: justify;
+}
+
+.project:hover {
+    border-color: #3f3f46;
+}
+
+/* SCREENSHOTS */
+.screenshot {
+    margin: 2rem 0;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #27272a;
+}
+
+.screenshot img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* LISTS */
+.tech-stack {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-stack li {
+    background-color: #1f1f1f;
+    color: #a1a1aa;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    border: 1px solid #27272a;
+}
+
+.highlights {
+    list-style: none;
+    padding-left: 0;
+    text-align: justify;
+}
+
+.highlights li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #d4d4d8;
+}
+
+.highlights li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #60a5fa;
+}
+
+/* CODE BLOCK */
+.code-block {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #0d0d0d;
+    border: 1px solid #1f1f1f;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.code-block h3 {
+    margin-top: 0;
+}
+
+.code-block pre {
+    margin: 0;
+}
+
+.code-block code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: #e4e4e7;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 6rem;
+    padding: 3rem 0;
+    text-align: center;
+    border-top: 1px solid #27272a;
+    color: #71717a;
+    font-size: 0.9rem;
+}
+
+footer p {
+    color: #71717a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+    body {
+        padding: 0 16px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .project {
+        padding: 1.5rem;
+    }
+
+    header {
+        padding: 4rem 0 3rem;
+    }
+
+    .contact {
+        font-size: 0.85rem;
+    }
+}
